@@ -129,3 +129,59 @@ score_with_duplicates = [85,92,85,78,92,95,85]
 unique_scores = list(set(score_with_duplicates))
 print("\n Original Scores:",score_with_duplicates)
 print("\n Unique scores:" , unique_scores)
+
+print("\n--Dictionaries--")
+print("=" * 50)
+
+student = {
+    "name": "Alice",
+    "age": 20,
+    "scores": [85, 92, 78],
+    "department": "Computer Science",
+    "is_active": True,
+    "Hobbies": ["Football", "Music", "Gaming","Dancing"]
+}
+
+print("Student Dictionary:")
+print(student)
+
+
+
+alice = student['scores']
+passing_scores = [score for score in alice if score > 80]
+# Accessing values
+print("Alice scores:", student_scores)
+print("Alice scores > 80:", passing_scores)
+print("\nStudent name :", student['name'])
+print("Student scores :", student['scores'])
+print("Average score :", sum(student['scores']) / len(student['scores']))
+print("\npassing scores(>=80):",passing_scores)
+
+# Adding and updating values
+student["grade"] = "A"
+student["age"] = 21
+
+print("\nAfter Update:")
+print(student)
+
+#conditional statements
+#function to determine grade based on score
+def get_grade(scores):
+ if scores >= 90:
+    return "A"
+ elif scores >= 80:
+    return "B"
+ elif scores >= 70:
+    return "C"
+ elif scores >= 60:
+    return "D"
+ else:
+    return "F"
+ 
+
+
+ test_scores = [95, 85, 75, 65, 55]
+
+print("\nGrades:")
+for score in test_scores:
+    print(f"Score: {score} -> Grade: {get_grade(score)}")
