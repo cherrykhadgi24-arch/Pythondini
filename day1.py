@@ -89,3 +89,43 @@ print("\npassing scores(>=80):",passing_scores)
 print("number of students:",len(student_name))
 print("highest score of students:",max(student_scores))
 print("lowest score of students:",min(student_scores))
+
+#Day 2
+#tuples cannot be changed after creation
+student_record=("alice",20,85.5,"computer science")
+print("student record typle:",student_record)
+
+#accessing tuple elements
+print("Name:" ,student_record[0] )
+print("Name:" ,student_record[1] )
+
+#tuple unpacking
+name,age,score,department = student_record
+print("\n unpacked  :" ,name ,"is" ,age,"years old,scored", score ,"in" , department)
+
+#When to Use Tuples (Points)
+#To store fixed data that should not change.
+#To return multiple values from a function.
+#To use as dictionary keys because tuples are immutable.
+
+print("\n --sets--")
+print("="*50)
+
+#sets automatically remove duplicates 
+course_A ={"alice","bob","charlie" ,"Diana"}
+course_B={"charlie","diana","eve","frank"}
+
+print("course A students:" , course_A)
+print("courseB students:",course_B)
+
+#set operations (great for finding overlaps)
+print("\n students in both course:",course_A & course_B)
+print("\n students in either course:",course_A |course_B)
+print("only in course a:",course_A - course_B)
+print("only in one course a:",course_A ^ course_B)
+
+#remove duplicates from using set 
+score_with_duplicates = [85,92,85,78,92,95,85]
+unique_scores = list(set(score_with_duplicates))
+print("\n Original Scores:",score_with_duplicates)
+print("\n Unique scores:" , unique_scores)
