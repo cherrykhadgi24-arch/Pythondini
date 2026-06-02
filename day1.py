@@ -183,5 +183,5 @@ def get_grade(scores):
  test_scores = [95, 85, 75, 65, 55]
 
 print("\nGrades:")
-for score in test_scores:
+for score in student_scores:
     print(f"Score: {score} -> Grade: {get_grade(score)}")
