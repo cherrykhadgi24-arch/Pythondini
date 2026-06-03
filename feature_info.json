@@ -11,4 +11,18 @@
   "target_column": "final_score",
   "categorical_mappings": {
     "extracurricular": {
-      "No": 
+      "Yes": 1,
+      "No": 0
+    },
+    "internet_access": {
+      "Yes": 1,
+      "No": 0
+    },
+    "parent_education": {
+      "High School": 0,
+      "Bachelor": 1,
+      "Master": 2,
+      "PhD": 3
+    }
+  }
+}
